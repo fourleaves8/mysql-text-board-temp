@@ -46,6 +46,8 @@ public class BuildService {
 			sb.append("갱신날짜 : " + article.updateDate + "<br>");
 			sb.append("제목 : " + article.title + "<br>");
 			sb.append("내용 : " + article.body + "<br>");
+			sb.append("<a href=\"" + (article.id - 1) + ".html\">이전글</a><br>");
+			sb.append("<a href=\"" + (article.id + 1) + ".html\">다음글</a><br>");
 
 			sb.append("</div>");
 
@@ -59,7 +61,7 @@ public class BuildService {
 			String body = sb.toString();
 
 			Util.fileWriter(filePath, body);
-			System.out.println(filePath + "가 생성되었습니다."); 
+			System.out.println(filePath + "가 생성되었습니다.");
 
 		}
 	}
