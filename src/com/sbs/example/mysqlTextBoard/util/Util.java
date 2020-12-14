@@ -3,6 +3,8 @@ package com.sbs.example.mysqlTextBoard.util;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -65,4 +67,27 @@ public class Util {
 
 		return rs;
 	}
+
+	public static void copy(File oriFile, File copyFile) {
+		try {
+
+			FileInputStream fis = new FileInputStream(oriFile); // 읽을파일
+			FileOutputStream fos = new FileOutputStream(copyFile); // 복사할파일
+
+			int fileByte = 0;
+			// fis.read()가 -1 이면 파일을 다 읽은것
+			while ((fileByte = fis.read()) != -1) {
+				fos.write(fileByte);
+			}
+			// 자원사용종료
+			fis.close();
+			fos.close();
+
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
 }

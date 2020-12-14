@@ -20,6 +20,8 @@ public class BuildService {
 		System.out.println("site 폴더 생성");
 		Util.rmdir(new File("site"));
 		Util.mkdirs("site");
+		
+		Util.copy(new File("site_template/app.css"), new File("site/app.css"));
 
 		List<Article> articles = articleService.showList();
 
