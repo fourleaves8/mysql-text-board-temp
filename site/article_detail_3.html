@@ -1,1 +1,132 @@
-<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>게시물 상세페이지 - 제목3</title></head><body><h1>게시물 상세페이지</h1><div>번호 : 3<br>생성날짜 : 2020-12-14 08:57:43<br>갱신날짜 : 2020-12-14 08:57:43<br>제목 : 제목3<br>내용 : 내용3<br><a href="2.html">이전글</a><br><a href="4.html">다음글</a><br></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>명언</title>
+<!-- 폰트어썸 불러오기 -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<style>
+/*font*/
+@font-face {
+	font-family: 'LotteMartDream';
+	font-style: normal;
+	font-weight: 400;
+	src:
+		url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2')
+		format('woff2'),
+		url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff')
+		format('woff');
+}
+
+@font-face {
+	font-family: 'LotteMartDream';
+	font-style: normal;
+	font-weight: 700;
+	src:
+		url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2')
+		format('woff2'),
+		url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff')
+		format('woff');
+}
+
+@font-face {
+	font-family: 'LotteMartDream';
+	font-style: normal;
+	font-weight: 300;
+	src:
+		url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2')
+		format('woff2'),
+		url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff')
+		format('woff');
+}
+
+/*normalize*/
+body, ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/*lib*/
+.bd-red {
+	border: 3px solid red;
+}
+
+.bd-yellow {
+	border: 3px solid yellow;
+}
+
+.bd-green {
+	border: 3px solid lightgreen;
+}
+
+.bd-blue {
+	border: 3px solid blue;
+}
+
+.bd-pink {
+	border: 3px solid pink;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-jc-c {
+	justify-content: center;
+}
+
+.flex-ai-c {
+	align-items: center;
+}
+
+.height-100p {
+	height: 100%
+}
+/*custom*/
+.con-min-width {
+	min-width: 1200px;
+}
+
+/*로고바 시작*/
+.logo-bar {
+	background-color: black;
+	color: white;
+	height: 120px;
+}
+/*로고바 끝*/
+
+/*로고 시작*/
+.logo {
+	font-size: 4rem;
+}
+
+.logo>span>span {
+	color: brown;
+}
+
+.logo>i {
+	color: brown;
+	margin-right: 15px;
+}
+/*로고 끝*/
+</style>
+
+</head>
+<body>
+	<header class="logo-bar con-min-width">
+		<div class="con height-100p flex flex-jc-c">
+			<a href="#" class="logo flex flex-ai-c"> <i
+				class="fas fa-hamburger"></i> <span>Ber<span>g</span>ers
+			</span>
+			</a>
+		</div>
+	</header>번호 : 3<br>생성날짜 : 2020-12-14 08:57:43<br>갱신날짜 : 2020-12-14 08:57:43<br>제목 : 제목3<br>내용 : 내용3<br><a href="article_detail_2.html">이전글</a><br><a href="article_detail_4.html">다음글</a><br></div></body>
+</html>
